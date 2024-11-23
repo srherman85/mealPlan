@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <script src="projectJS.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Build Your Meal Plan</h1>
+            <p>Shannon Herman | WEB-115 | Section 0004</p>
+        </div>
+    </header>
+    <main>
+        <form id="mealPlanForm">
+            <label for="userName" type="text">Name:</label>
+            <input type="text" name="userName">
+            <label for="userEmail">Email:</label>
+            <input type="email" name="userEmail" required>
+
+            <h2>Weekly Meal Plan</h2>
+            <p>Enter your meals for each day:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Breakfast</th>
+                        <th>Snack</th>
+                        <th>Lunch</th>
+                        <th>Snack</th>
+                        <th>Dinner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>Monday</td>
+                      <td><input type="text" name="mondayBreakfast"></td>
+                      <td><input type="text" name="mondaySnack1"></td>
+                      <td><input type="text" name="mondayLunch"></td>
+                      <td><input type="text" name="mondaySnack2"></td>
+                      <td><input type="text" name="mondayDinner"></td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td><input type="text" name="tuesdayBreakfast"></td>
+                      <td><input type="text" name="tuesdaySnack1"></td>
+                      <td><input type="text" name="tuesdayLunch"></td>
+                      <td><input type="text" name="tuesdaySnack2"></td>
+                      <td><input type="text" name="tuesdayDinner"></td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday</td>
+                      <td><input type="text" name="wednesdayBreakfast"></td>
+                      <td><input type="text" name="wednesdaySnack1"></td>
+                      <td><input type="text" name="wednesdayLunch"></td>
+                      <td><input type="text" name="wednesdaySnack2"></td>
+                      <td><input type="text" name="wednesdayDinner"></td>
+                    </tr>
+                    <tr>
+                      <td>Thursday</td>
+                      <td><input type="text" name="thursdayBreakfast"></td>
+                      <td><input type="text" name="thursdaySnack1"></td>
+                      <td><input type="text" name="thursdayLunch"></td>
+                      <td><input type="text" name="thursdaySnack2"></td>
+                      <td><input type="text" name="thursdayDinner"></td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td><input type="text" name="fridayBreakfast"></td>
+                      <td><input type="text" name="fridaySnack1"></td>
+                      <td><input type="text" name="fridayLunch"></td>
+                      <td><input type="text" name="fridaySnack2"></td>
+                      <td><input type="text" name="fridayDinner"></td>
+                    </tr>
+                    <tr>
+                      <td>Saturday</td>
+                      <td><input type="text" name="saturdayBreakfast"></td>
+                      <td><input type="text" name="saturdaySnack1"></td>
+                      <td><input type="text" name="saturdayLunch"></td>
+                      <td><input type="text" name="saturdaySnack2"></td>
+                      <td><input type="text" name="saturdayDinner"></td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td><input type="text" name="sundayBreakfast"></td>
+                      <td><input type="text" name="sundaySnack1"></td>
+                      <td><input type="text" name="sundayLunch"></td>
+                      <td><input type="text" name="sundaySnack2"></td>
+                      <td><input type="text" name="sundayDinner"></td>
+                    </tr>                  
+                </tbody>
+            </table>
+            <button type="submit" id="submitPlan">Submit</button>
+            <button type="button" id="clearPlan" onclick="clearForm()">Clear</button>
+        </form>
+    </main>
+</body>
+</html>

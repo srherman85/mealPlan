@@ -1,0 +1,128 @@
+/* Neumorphism-inspired style */
+body {
+  font-family: Arial, sans-serif;
+  background: #e0e5ec;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header .banner {
+  background: #e0e5ec;
+  border-radius: 12px;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+h1 {
+  text-align: center;
+}
+
+header .banner h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #444;
+}
+
+header .banner p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+form {
+  background: #e0e5ec;
+  border-radius: 12px;
+  box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #ffffff;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 5px;
+  color: #555;
+}
+
+form input[type="text"], 
+form input[type="email"] {
+  background: #e0e5ec;
+  border: none;
+  border-radius: 8px;
+  box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #ffffff;
+  padding: 10px;
+  width: calc(100% - 20px);
+  outline: none;
+  font-size: 1rem;
+  color: #555;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+table input[type="text"] {
+  background: #e0e5ec;
+  border: none;
+  border-radius: 8px;
+  box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #ffffff;
+  padding: 5px;
+  width: 90%;
+  outline: none;
+}
+
+button {
+  background: #e0e5ec;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: inset 6px 6px 12px #b8b9be, inset -6px -6px 12px #ffffff;
+}
+
+button#submitPlan {
+  color: #fff;
+  background: linear-gradient(145deg, #84c684, #6da26d);
+}
+
+button#clearPlan {
+  color: #fff;
+  background: linear-gradient(145deg, #e56b6b, #b25858);
+}
+
+button#printPlan {
+  color: #fff;
+  background: linear-gradient(145deg, #4169e1, #4169e1);
+}
+
+button#downloadPlan {
+  color: #fff;
+  background: linear-gradient(145deg, #000000, #000000);
+}
+button:hover {
+  transform: scale(1.05);
+}

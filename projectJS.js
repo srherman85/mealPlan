@@ -43,15 +43,18 @@ document.getElementById("mealPlanForm").addEventListener("submit", function(even
     // Add HTML content to the popup window
     flyWindow.document.write('<!DOCTYPE html>');
     flyWindow.document.write('<html lang="en">');
-    flyWindow.document.write('<head><title>Meal Plan</title></head>');
+    flyWindow.document.write('<head>');
+    flyWindow.document.write('<title>Meal Plan</title>')
+    flyWindow.document.write('<link rel="stylesheet" href="styles.css"></link>')
+    flyWindow.document.write('</head>')
     flyWindow.document.write('<body>');
     flyWindow.document.write('<h1>Meal Plan</p>');
     // Display the table
     flyWindow.document.write(displayTable.outerHTML);
     // Print Button
-    flyWindow.document.write('<button onclick="window.print()">Print</button>');
+    flyWindow.document.write('<button onclick="window.print()" id="printPlan">Print</button>');
     // Download Button
-    flyWindow.document.write('<button onclick="downloadPage()">Download</button>');
+    flyWindow.document.write('<button onclick="downloadPage()" id="downloadPlan">Download</button>');
     // Download Function
     flyWindow.document.write('<script>');
     flyWindow.document.write('function downloadPage() {');
